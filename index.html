@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VL 100 Support Guide</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body onload="displayDateTime()">
+
+    <!-- Breadcrumb Navigation -->
+    <nav aria-label="breadcrumb">
+        <ul class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Support</a></li>
+            <li class="active">VL 100 Quick Start Guide</li>
+        </ul>
+    </nav>
+
+    <!-- Theme Toggle Switch (Slider) -->
+    <div class="theme-toggle">
+        <label class="switch">
+            <input type="checkbox" id="theme-switch" onclick="toggleTheme()">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>VL 100 Quick Start Guide</h1>
+            <p>Welcome to EMV with GovtPortal! Let’s get your device(s) set up.</p>
+            <!-- Date and Time Display -->
+            <div id="datetime" style="font-size: 16px; color: #ffff;"></div>
+        </header>
+
+        <!-- VL 100 Quick Start Section -->
+        <section class="quick-start-section">
+            <div class="text-container">
+                <h2>VL 100 Quick Start</h2>
+                <p>Your device is automatically set up to plug and play for an ethernet connection, however, if you would prefer to use Wi-Fi, please follow these steps:</p>
+                <p>Once you're connected, your device will cycle to a screen labeled <strong>“Valor Connect”</strong> and state <strong>“Listening……..”</strong></p>
+                <p>Your screen should always state <strong>“Valor Connect Listening…..”</strong> when not processing a transaction. If your machine is on the home screen:</p>
+                <ul>
+                    <li>Select the <strong>Favorites Button (★)</strong> on your Terminal</li>
+                    <li>Select <strong>10. Start VC</strong> to enable a Valor Connect connection on your VL100 or VL110</li>
+                </ul>
+                <p>If you experience any issues with setup or maintaining a connection, please reach out to our support team via phone or email.</p>
+
+                <h3>Transaction Process</h3>
+                <p>Now that your machine is connected, when you select the <strong>Swipe/EMV</strong> button in your software to process a transaction, the machine will:</p>
+                <ul>
+                    <li>Light up and prompt the customer for confirmation of the transaction amount (green button).</li>
+                    <li>Prompt the customer to swipe, dip, or tap their card.</li>
+                    <li>Display the bank’s response as either <strong>Approved</strong> or <strong>Declined</strong>.</li>
+                    <li>The software will reflect the bank’s response.</li>
+                </ul>
+                <p>Please feel free to generate receipts via the software.</p>
+                <p>The device(s) will automatically batch all transactions processed that day.</p>
+            </div>
+
+            <!-- Image Container -->
+            <div class="image-container">
+                <img src="assets/images/Screenshot 2024-09-17 151758.png" alt="VL 100 Terminal Guide" class="terminal-guide">
+            </div>
+        </section>
+
+        <!-- Capture Preauth (Credit) Section -->
+        <section>
+            <h2>Capture Preauth (Credit)</h2>
+            <ol>
+                <li>Tap the <strong>Menu</strong> icon (☰).</li>
+                <li>Tap <strong>Option 1 (Payment)</strong>, tap on <strong>Ticket</strong> and enter the password.</li>
+                <li>Select <strong>Tran Number</strong> or <strong>Card Number</strong>.
+                    <ul>
+                        <li>If <strong>Tran Number</strong>, enter the transaction number.</li>
+                        <li>If <strong>Card Number</strong>, enter the last 4 digits of the card.</li>
+                    </ul>
+                </li>
+                <li><strong>Sign</strong> and <strong>Tip</strong> if prompted.</li>
+                <li>Select receipt delivery method.</li>
+            </ol>
+        </section>
+
+        <!-- Pre-Sale Ticket Section -->
+        <section>
+            <h2>Pre-Sale Ticket</h2>
+            <ol>
+                <li>Tap the <strong>Menu</strong> icon (☰).</li>
+                <li>Tap the <strong>Page Down</strong> icon.</li>
+                <li>Tap <strong>Option 2 (Host Utility)</strong>.</li>
+                <li>Enter the password and select <strong>Pre-Sale Ticket</strong>.</li>
+                <li>Enter dollar amount, tap the <strong>OK</strong> button, and the pre-sale ticket will be printed.</li>
+            </ol>
+        </section>
+
+        <!-- Connect to WiFi Section -->
+        <section>
+            <h2>Connect to WiFi</h2>
+            <ol>
+                <li>From the Home Screen, tap (**★**) <strong>7 Comm Config</strong>.</li>
+                <li>Tap <strong>Comm Config</strong>, tap <strong>WiFi</strong>, tap the <strong>SSID</strong>, then tap <strong>Configure</strong>.</li>
+                <li>Enter <strong>WiFi Password</strong>. (WiFi Password is case-sensitive).</li>
+                <li>Tap <strong>OK</strong> to confirm, press the <strong>Cancel</strong> button, then tap <strong>Connect</strong>.</li>
+            </ol>
+        </section>
+
+        <!-- Favorites Menu Section -->
+        <section>
+            <h2>Favorites Menu</h2>
+            <ul>
+                <li><strong>Reprint Receipt</strong>: Print receipt for the last transaction.</li>
+                <li><strong>Settlement</strong>: Option to settle the current batch.</li>
+                <li><strong>Tip Adjust</strong>: Adjust tip amount for transactions in the open batch.</li>
+                <li><strong>Reports</strong>: View summary reports for open batch, last settled batch, and detailed reports for the last 5 batches settled.</li>
+                <li><strong>Change Password</strong>: Set one general password or create custom passwords for settlements, voids, refunds, and removing custom fees.</li>
+                <li><strong>Download Package</strong>: Applies parameter changes or updates the version on the device.</li>
+                <li><strong>Comm Config</strong>: Configure your internet connection settings.</li>
+                <li><strong>Reboot</strong>: Power cycles the device.</li>
+                <li><strong>Remote Diagnostics</strong>: Allows ISO to remotely troubleshoot the device.</li>
+            </ul>
+        </section>
+
+        <!-- Transactions Section -->
+        <section>
+            <h2>Transactions</h2>
+
+            <h3>Card Sale and Cash Sale (Dual Pricing)</h3>
+            <ol>
+                <li>Enter <strong>Transaction Amount</strong> and press <strong>OK</strong>.</li>
+                <li><strong>Swipe/Insert/Tap</strong> card on the <strong>Present Card</strong> screen or start typing the card number for <strong>Manual Entry</strong>.</li>
+                <li><strong>Sign</strong> and <strong>Tip</strong> if prompted.</li>
+                <li>Select receipt delivery method.</li>
+            </ol>
+
+            <h3>Credit Sale (Bin Based Surcharge)</h3>
+            <ol>
+                <li>Enter <strong>Transaction Amount</strong> and press <strong>OK</strong>.</li>
+                <li><strong>Swipe/Insert/Tap</strong> card on the <strong>Present Card</strong> screen or start typing the card number for <strong>Manual Entry</strong>.</li>
+                <li><strong>Sign</strong> and <strong>Tip</strong> if prompted.</li>
+                <li>Select receipt delivery method.</li>
+            </ol>
+
+            <!-- Repeat for Debit Sale, EBT Food/Cash Sale, Credit Void, Credit Refund, Credit Preauth -->
+
+        </section>
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search support articles...">
+            <button onclick="searchContent()">Search</button>
+        </div>
+
+        <!-- Image Gallery -->
+        <section>
+            <h2>VL 100 Terminal Guide</h2>
+            <div class="thumbnail-container">
+                <img src="assets/images/terminal-guide.png" alt="VL 100 Terminal Guide" class="thumbnail" onclick="openModal('assets/images/terminal-guide.png', 'VL 100 Terminal Guide')">
+            </div>
+        </section>
+
+        <section>
+            <h2>VL 100 Transactions and Favorites Guide</h2>
+            <div class="thumbnail-container">
+                <img src="assets/images/transactions-guide.png" alt="VL 100 Transactions and Favorites Guide" class="thumbnail" onclick="openModal('assets/images/transactions-guide.png', 'VL 100 Transactions and Favorites Guide')">
+            </div>
+        </section>
+
+        <!-- Modal for Lightbox -->
+        <div id="imageModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImage">
+            <div id="caption"></div>
+        </div>
+
+        <!-- Contact Form -->
+        <section class="contact-form">
+            <h2>Contact Support</h2>
+            <form action="submit-support-ticket" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <!-- Back-to-Top Button -->
+        <button onclick="scrollToTop()" id="backToTopBtn" title="Go to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Gov't Portal. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="js/script.js"></script>
+</body>
+</html>
