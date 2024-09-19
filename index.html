@@ -10,20 +10,31 @@
 <body onload="displayDateTime()">
 
     <!-- Breadcrumb Navigation -->
-    <nav aria-label="breadcrumb">
-        <ul class="breadcrumb">
+    <nav aria-label="breadcrumb" class="breadcrumb">
+        <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Support</a></li>
             <li class="active">VL 100 Quick Start Guide</li>
         </ul>
     </nav>
 
-    <!-- Theme Toggle Switch (Slider) -->
-    <div class="theme-toggle">
-        <label class="switch">
-            <input type="checkbox" id="theme-switch" onclick="toggleTheme()">
-            <span class="slider round"></span>
-        </label>
+    <!-- Top Bar for Theme Toggle and Search -->
+    <div class="top-bar">
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search support articles...">
+            <button onclick="searchContent()">Search</button>
+        </div>
+
+        <!-- Theme Toggle Switch (Slider with Sun and Moon icons) -->
+        <div class="theme-toggle">
+            <span class="icon sun-icon"><i class="fas fa-sun"></i></span>
+            <label class="switch">
+                <input type="checkbox" id="theme-switch" onclick="toggleTheme()">
+                <span class="slider round"></span>
+            </label>
+            <span class="icon moon-icon"><i class="fas fa-moon"></i></span>
+        </div>
     </div>
 
     <div class="container">
@@ -61,7 +72,11 @@
 
             <!-- Image Container -->
             <div class="image-container">
-                <img src="assets/images/Screenshot 2024-09-17 151758.png" alt="VL 100 Terminal Guide" class="terminal-guide">
+                <!-- First Image -->
+                <img src="assets/images/Screenshot 2024-09-17 151758.png" alt="VL 100 Terminal Guide" class="terminal-guide" onclick="openModal('assets/images/Screenshot 2024-09-17 151758.png', 'VL 100 Terminal Guide')">
+
+                <!-- Second Image (Thumbnail for Expansion) -->
+                <img src="assets/images/transactions-guide.png" alt="VL 100 Transactions Guide" class="transactions-guide thumbnail" onclick="openModal('assets/images/transactions-guide.png', 'VL 100 Transactions Guide')">
             </div>
         </section>
 
@@ -141,29 +156,6 @@
                 <li>Select receipt delivery method.</li>
             </ol>
 
-            <!-- Repeat for Debit Sale, EBT Food/Cash Sale, Credit Void, Credit Refund, Credit Preauth -->
-
-        </section>
-
-        <!-- Search Bar -->
-        <div class="search-bar">
-            <input type="text" id="search-input" placeholder="Search support articles...">
-            <button onclick="searchContent()">Search</button>
-        </div>
-
-        <!-- Image Gallery -->
-        <section>
-            <h2>VL 100 Terminal Guide</h2>
-            <div class="thumbnail-container">
-                <img src="assets/images/terminal-guide.png" alt="VL 100 Terminal Guide" class="thumbnail" onclick="openModal('assets/images/terminal-guide.png', 'VL 100 Terminal Guide')">
-            </div>
-        </section>
-
-        <section>
-            <h2>VL 100 Transactions and Favorites Guide</h2>
-            <div class="thumbnail-container">
-                <img src="assets/images/transactions-guide.png" alt="VL 100 Transactions and Favorites Guide" class="thumbnail" onclick="openModal('assets/images/transactions-guide.png', 'VL 100 Transactions and Favorites Guide')">
-            </div>
         </section>
 
         <!-- Modal for Lightbox -->
@@ -173,9 +165,14 @@
             <div id="caption"></div>
         </div>
 
-        <!-- Contact Form -->
+        <!-- Contact Section -->
         <section class="contact-form">
             <h2>Contact Support</h2>
+            <address>
+                <p>2750 Holcomb Bridge Road <br> Alpharetta, Georgia 30022</p>
+                <p>Phone: <a href="tel:877-994-6889">877-994-6889</a></p>
+                <p>Email: <a href="mailto:support@govtportal.com">support@govtportal.com</a></p>
+            </address>
             <form action="submit-support-ticket" method="POST">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -189,11 +186,6 @@
                 <button type="submit">Submit</button>
             </form>
         </section>
-
-        <!-- Back-to-Top Button -->
-        <button onclick="scrollToTop()" id="backToTopBtn" title="Go to top">
-            <i class="fas fa-arrow-up"></i>
-        </button>
 
         <!-- Footer -->
         <footer>

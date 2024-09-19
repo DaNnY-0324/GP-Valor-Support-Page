@@ -19,22 +19,6 @@ window.onload = () => {
     }
 };
 
-// Show or hide the back-to-top button depending on the scroll position
-window.onscroll = function() {
-    const btn = document.getElementById("backToTopBtn");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        btn.style.display = "block";
-    } else {
-        btn.style.display = "none";
-    }
-};
-
-// Scroll back to the top when the button is clicked
-function scrollToTop() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
-
 // Function to open the image modal
 function openModal(src, caption) {
     const modal = document.getElementById("imageModal");

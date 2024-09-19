@@ -2,6 +2,8 @@
 
 This is a comprehensive support guide for the VL 100 device. It contains step-by-step instructions for setting up, troubleshooting, and handling transactions with the device. This guide is designed to be responsive and user-friendly, with a light and dark theme toggle, search functionality, and image gallery with modal display for detailed guides.
 
+![VL 100 Guide Screenshot](https://github.com/user-attachments/assets/2a1b2845-57ee-48aa-ac6e-4eb2effadf4e)
+
 ## Features
 
 - **Theme Toggle**: Switch between light and dark modes for better readability.
@@ -48,7 +50,7 @@ At the bottom of the page, a contact form allows users to reach out for support.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/vl100-support-guide.git
+   git clone https://github.com/DaNnY-0324/GP-Valor-Support-Page.git
    ```
 
 2. Open the `index.html` file in any web browser.
