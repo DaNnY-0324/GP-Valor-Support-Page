@@ -2,6 +2,8 @@
 
 This is a comprehensive support guide for the VL 100 device. It contains step-by-step instructions for setting up, troubleshooting, and handling transactions with the device. This guide is designed to be responsive and user-friendly, with a light and dark theme toggle, search functionality, and image gallery with modal display for detailed guides.
 
+![Screenshot 2024-09-19 140654](https://github.com/user-attachments/assets/19dc51c9-0c9e-4ccb-af0b-9c3db3d60822)
+
 ## Features
 
 - **Theme Toggle**: Switch between light and dark modes for better readability.
